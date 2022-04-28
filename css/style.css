@@ -1,0 +1,888 @@
+/*CSS document*/
+
+/*HEADER*/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: grid;
+    grid-column: 1/span end;
+    background: white;
+    width: 100%;
+    padding: 0;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#logo img {
+    width: 40%;
+    height: 40%;
+    margin-left: 8.5%;
+}
+
+#logo,
+#main-nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+#main-nav {
+    display: flex;
+    margin-right: 0;
+    list-style: none;
+    background-color: #e1e1d3;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#main-nav a:hover {
+    color: #7e7e36;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.bar {
+    width: 100vw;
+    height: 10px;
+    background-color: #7e7e36;
+
+}
+
+
+#foto img {
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: -5px;
+}
+
+.banner {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner h2 {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #7e7e36;
+    justify-content: center;
+
+
+}
+
+.banner h1 {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 2.5%;
+    justify-content: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 2em;
+    padding: 0;
+}
+
+.artikel-container {
+    display: flex;
+    justify-content: center;
+    padding: 2%
+}
+
+.artikel-container img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+.artikel-container h2 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 1% 4%;
+}
+
+.artikel-container p {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 0 4%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f7ebe4;
+    justify-content: center;
+
+
+}
+
+aside img {
+    width: 50%;
+    margin: 0 25%;
+
+}
+
+aside h2 {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #7e7e36;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+aside p {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 4%;
+    order: -1;
+}
+
+footer {
+    display: flex;
+
+    flex-direction: column;
+    background-color: #7e7e36;
+}
+
+footer img {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 0 40%;
+
+    padding: 2%
+}
+
+#footer h1 {
+    display: flex;
+    justify-content: center;
+    color: #7e7e36;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+#footer {
+    background-color: white;
+    padding: 2%
+}
+
+.container img {
+    width: 100%;
+    margin-bottom: -5.5px;
+}
+
+#vietnam {
+    background-color: #e6eed0;
+    padding: 4%;
+
+
+}
+
+#sri-lanka p,
+#sri-lanka h2 {
+    color: white;
+}
+
+#sri-lanka {
+    background-color: #7e7e36;
+    padding: 4%;
+}
+
+#jordan {
+    background-color: #eeddd0;
+    padding: 4%;
+}
+
+#marokko {
+    background-color: #d0e1ee;
+    padding: 4%;
+
+
+}
+
+.container p {
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.container h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+.container a {
+    font-weight: 300;
+    font-family: sans-serif;
+    color: black;
+}
+
+#sri-lanka a {
+    color: white;
+}
+
+.rejse-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        "p p p p p p"
+        "t t t t t t"
+        "i i i i i i";
+
+}
+
+.rejse-container img {
+    grid-area: p;
+}
+
+.text {
+    grid-area: t;
+}
+
+.info {
+    grid-area: i;
+    font-family: sans-serif;
+
+}
+
+.text h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    color: #7e7e36;
+
+}
+
+.text p {
+    font-family: sans-serif;
+    color: #7e7e36;
+}
+
+.info h3 {
+    font-family: sans-serif;
+    color: dimgrey;
+    font-size: 12pt;
+    margin-bottom: 2%;
+}
+
+.info p {
+    font-family: sans-serif;
+    color: grey;
+}
+
+.info h5 {
+    font-weight: 600;
+    font-size: 12pt;
+    margin-bottom: 2%;
+
+
+
+}
+
+.rejse-container article {
+    padding: 4%;
+}
+
+
+
+.plan-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+
+
+    grid-template-areas:
+        "in in in in in in"
+        "pr pr pr pr pr pr"
+        "pri pri pri pri pri pri"
+        "ga ga ga ga ga ga"
+        "gai gai gai gai gai gai"
+        "bo bo bo bo bo bo"
+        "boi boi boi boi boi boi"
+        "fl fl fl fl fl fl"
+        "fli fli fli fli fli fli"
+        "sk sk sk sk sk sk"
+        "ski ski ski ski ski ski"
+        "ho ho ho ho ho ho"
+        "hoi hoi hoi hoi hoi hoi"
+        "boo boo boo boo boo boo";
+
+}
+
+#intro {
+    grid-area: in;
+}
+
+#program {
+    grid-area: pr;
+    background-color: #f7ebe4;
+}
+
+#gave {
+    grid-area: ga;
+}
+
+#born {
+    grid-area: bo;
+    background-color: #e6eed0;
+}
+
+#fly {
+    grid-area: fl;
+    background-color: #f7ebe4;
+}
+
+#skildpadde h2,
+#skildpadde p {
+    color: white;
+
+}
+
+#skildpadde {
+    grid-area: sk;
+    background-color: #7e7e36;
+
+}
+
+#hotel {
+    grid-area: ho;
+}
+
+#book {
+    grid-area: boo;
+    background-color: #e6eed0;
+}
+
+article {
+    padding: 4%;
+}
+
+
+article h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+article p {
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#program-img {
+    grid-area: pri;
+    margin-bottom: -4px;
+
+}
+
+#gave-img {
+    grid-area: gai;
+    margin-bottom: -4px;
+}
+
+#born-img {
+    grid-area: boi;
+    margin-bottom: -4px;
+}
+
+#fly-img {
+    grid-area: fli;
+    margin-bottom: -4px;
+}
+
+#skildpadde-img {
+    grid-area: ski;
+    margin-bottom: -4px;
+}
+
+#hotel-img {
+    grid-area: hoi;
+    margin-bottom: -4px;
+}
+
+#gave-img img {
+    width: 100%;
+}
+
+#program-img img {
+    width: 100%;
+}
+
+#born-img img {
+    width: 100%;
+}
+
+#fly-img img {
+    width: 100%;
+}
+
+#skildpadde-img img {
+    width: 100%;
+}
+
+#hotel-img img {
+    width: 100%;
+}
+
+#kontakt-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+
+    grid-template-areas:
+        "x x x x x x"
+        "img img img img img img";
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    grid-area: x;
+    align-items: center;
+    padding: 4%;
+
+}
+
+.kontakt h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    
+
+
+}
+.kontakt p {
+    font-family: sans-serif;
+    font-weight: 300;
+
+
+}
+
+#kontakt-img {
+    grid-area: img;
+    margin-bottom: -4px;
+}
+
+
+
+
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    #program-img img {
+        width: 100%;
+
+    }
+
+    #kontakt-img img {
+        width: 100%;
+
+    }
+
+
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #logo-burger {
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #logo {
+        margin-top: .3em;
+        justify-content: center;
+        width: 100%;
+        margin-right: 7%;
+
+    }
+
+    #main-nav {
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        background-color: #7e7e36;
+    }
+
+    #main-nav a:hover {
+
+        color: lightgrey;
+
+    }
+
+    #main-nav a {
+        color: white;
+        margin: 10px .5em 0;
+        font-family: sans-serif;
+        font-weight: 300;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    aside {
+        flex-direction: row-reverse;
+
+    }
+
+    .artikel {
+        align-self: center;
+    }
+
+    aside img {
+        order: 1;
+        margin: 0;
+        width: 50%;
+        height: 50%
+    }
+
+    .rejse-container {
+        grid-template-areas:
+            "p p p p p p"
+            "t t t t t t"
+            "i i i i i i";
+    }
+
+    .rejse-container img {
+        width: 100%;
+    }
+
+    .plan-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+
+
+        grid-template-areas:
+            "in in in in in in"
+            "pr pr pr pr pri pri"
+            "gai gai ga ga ga ga"
+            "bo bo bo bo boi boi"
+            "fl fl fl ski ski ski"
+            "fl fl fl sk sk sk"
+            "fli fli fli sk sk sk"
+            "ho ho ho boo boo boo"
+            "hoi hoi hoi boo boo boo"
+        ;
+
+    }
+
+    article img {
+        width: auto;
+    }
+
+    #program {
+        display: flex;
+        flex-direction: column
+    }
+
+    #gave {
+        grid-area: ga;
+    }
+
+    #born {
+        grid-area: bo;
+    }
+
+    #fly {
+        grid-area: fl;
+    }
+
+    #skildpadde {
+        grid-area: sk;
+    }
+
+    #hotel {
+        grid-area: ho;
+    }
+
+    #book {
+        grid-area: boo;
+    }
+
+    #fly-img img {
+        width: 100%;
+    }
+
+    #skildpadde-img img {
+        width: 100%;
+    }
+
+
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .artikel-container p {
+        font-size: 25px;
+    }
+
+    .artikel-container h1 {
+        font-size: 40px;
+        
+    }
+
+    .artikel-container h2 {
+        font-size: 30px;
+        color: #7e7e36;
+    }
+
+    #main-nav {
+        background-color: white;
+        padding-right: 30px;
+
+    }
+
+    #main-nav a:hover {
+
+        color: black;
+    }
+
+    #main-nav a {
+
+        color: #7e7e36;
+    }
+
+    #logo {
+        margin: 1%;
+        justify-content: flex-start;
+    }
+
+
+
+    .banner h2 {
+
+        justify-content: flex-start;
+        margin-left: 6%;
+
+    }
+
+    .artikel-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .artikel-container img {
+        width: 100%;
+        flex: auto;
+    }
+
+    .artikel-container .bar {
+        display: none;
+    }
+
+    aside img {
+
+        width: 20em;
+        height: 20em;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+
+        grid-template-areas:
+            "v v v v v vc vc vc vc vc vc vc"
+            "sc sc sc sc sc sc sc s s s s s"
+            "j j j j j jc jc jc jc jc jc jc"
+            "mc mc mc mc mc mc mc m m m m m";
+
+    }
+
+    #vietnam-img {
+        grid-area: v;
+
+    }
+
+    #vietnam {
+        grid-area: vc
+    }
+
+    #sri-lanka-img {
+        grid-area: s;
+
+    }
+
+    #sri-lanka {
+        grid-area: sc
+    }
+
+    #jordan-img {
+        grid-area: j;
+
+    }
+
+    #jordan {
+        grid-area: jc
+    }
+
+    #marokko-img {
+        grid-area: m;
+
+    }
+
+    #marokko {
+        grid-area: mc;
+    }
+
+    .rejse-container {
+        grid-template-areas:
+            "p p p p i i"
+            "t t t t i i";
+    }
+
+    .rejse-container img {
+        width: 100%;
+    }
+
+    .info {
+        background-color: #e6eed0;
+
+    }
+
+    .info p,
+    .info h3 {
+        color: black;
+    }
+
+    .plan-container {
+
+        grid-template-areas:
+            "in in in in in in"
+            "pr pr pr pr pri pri"
+            "gai gai ga ga ga ga"
+            "bo bo bo bo boi boi"
+            "fl fl fl ski ski ski"
+            "fl fl fl sk sk sk"
+            "fli fli fli sk sk sk"
+            "ho ho ho boo boo boo"
+            "hoi hoi hoi boo boo boo"
+        ;
+
+    }
+    #kontakt-container {
+    grid-template-areas:
+        "x x x img img img"; 
+    }
+    
+    .kontakt {
+        justify-content: center;
+        font-size: 30px;
+    }
+
+
+
+}
